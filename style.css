@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+    background: #242424;
+}
+input[type="text"] {
+    background-color: #242424;
+    color: hsl(0, 0%, 100%);
+    border: 2px solid #888;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.special {
+    color: #fff;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 10px; */
+    align-self: flex-end;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 20px 100px 40px 100px;
+    box-shadow: 0 0 10px 0px #000;
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(4, 22, 56) 35%, rgb(0, 31, 37) 100%);
+
+}
+
+.lang-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+    border-bottom: 2px solid #949292;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.ru-lang,
+.en-lang {
+    padding: 5px;
+    border: 1px solid #4b4d02;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #414141;
+    color: #fff;
+}
+.ru-lang.active,
+.en-lang.active {
+    background: rgb(94, 73, 73);
+    border: 1px solid #d3d607;
+}
+
+#questionInput {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.input-wrp{
+    display: flex;
+    width: 100%;
+}
+.clear-input {
+    margin-top: 4px;
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    padding: 5px 25px;
+    border: 1px solid #333;
+    border-left: none;
+    background: rgb(117, 107, 17);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear-input:hover{
+    background: rgb(121, 121, 0);
+}
+label {
+    align-self: flex-start;
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+#outputAnswer {
+    width: 100%;
+}
+.entered-text {
+    background: rgb(124, 124, 10);
+}
+
+.question-wrp {
+    border: 1px solid rgb(87, 75, 7);
+    border-radius: 5px;
+    /* padding: 8px; */
+    margin-bottom: 10px;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(5, 62, 90);
+    color: #fff;
+}
+
+.question-wrp .answer,
+.question-wrp .question {
+    padding: 8px;
+}
+.question-wrp .answer {
+    border-radius: 0;
+    max-width: 300px;
+    min-width: 300px;
+    background: rgba(25, 128, 0, 0.4);
+    color: #fff;
+    border-left: 2px solid #000;
+    text-align: center;
+    align-self: stretch;
+    box-shadow: inset 0 0 3px 0px rgb(1, 190, 1);
+}
+.welcome {
+    color: #fff;
+}
+.welcome-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.welcome-subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 640px){
+    .wrapper {
+        padding: 10px;
+    }
+    .welcome-title {
+        font-size: 18px;
+    }
+    .welcome-subtitle {
+        font-size: 14px;
+    }
+    label {
+        font-size: 12px;
+    }
+    .clear-input {
+        padding: 3px 5px;
+        height: 35px;
+        font-size: 12px;
+        min-width: 70px;
+    }
+    #questionInput {
+        font-size: 14px;
+        height: 35px;
+    }
+    .question-wrp {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .question-wrp .answer {
+        min-width: 100%;
+        border-left: none;
+        border-radius: 0 0 5px 5px;
+    }
+}
+@media (min-width: 641px) and (max-width: 1200px){
+    .wrapper {
+        padding: 20px;
+    }
+    .welcome-title {
+        font-size: 18px;
+    }
+    .welcome-title {
+        font-size: 18px;
+    }
+    .welcome-subtitle {
+        font-size: 14px;
+    }
+    label {
+        font-size: 12px;
+    }
+    .clear-input {
+        padding: 3px 5px;
+        height: 35px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+    #questionInput {
+        font-size: 14px;
+        height: 35px;
+    }
+    .question-wrp {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .question-wrp .answer {
+        min-width: 220px;
+        max-width: 220px;
+        border-left: none;
+        border-radius: 0;
+    }
+}
