@@ -6,7 +6,7 @@ const lang = {
         welcomeTitle: 'Ответы на вопросы в Лицее знаний',
         welcomeSubtitle: 'Быстрый поиск ответов в режиме живого поиска',
         clearInput: 'Очистить',
-        special: 'Специально для (RLF)Russian Legion Fire',
+        special: 'Специально для Кошкиного дома',
     },
     en: {
         label: 'Enter question, key word or any word of question',
@@ -14,7 +14,7 @@ const lang = {
         welcomeTitle: 'Answers for questions in school of knowledge',
         welcomeSubtitle: 'Quick search of answers in live search mode',
         clearInput: 'Clear',
-        special: 'Special for (RLF)Russian Legion Fire',
+        special: 'Special for Cat\' house',
     },
 
 }
